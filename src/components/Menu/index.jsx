@@ -9,10 +9,17 @@ const Menu = () => {
       <a
         className="social"
         href="https://www.linkedin.com/in/jefferson-brandao-dev/"
+        target="_blank"
+        rel="noreferrer"
       >
         <BsLinkedin color="#fff" size={24} />
       </a>
-      <a className="social" href="https://www.instagram.com/jeffersonbrandao/">
+      <a
+        className="social"
+        href="https://www.instagram.com/jeffersonbrandao/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <BsInstagram color="#fff" size={24} />
       </a>
 
