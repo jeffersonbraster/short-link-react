@@ -3,6 +3,7 @@ import { FiLink } from "react-icons/fi";
 import Menu from "../../components/Menu";
 import LinkItem from "../../components/LinkItem";
 import api from "../../services/api";
+import { saveLink } from "../../services/storeLinks";
 import "./home.css";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
 
       setData(response.data);
       setLink("");
+      saveLink("@shortLink", response.data);
       setShowModal(true);
     } catch (error) {
       alert("Ocorreu um erro ao encurtar seu link!");
