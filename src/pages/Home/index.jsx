@@ -1,5 +1,6 @@
 import React from "react";
 import { FiLink } from "react-icons/fi";
+import Menu from "../../components/Menu";
 import "./home.css";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
         </div>
         <button type="submit">Encurtar link</button>
       </div>
+      <Menu />
     </div>
   );
 };
