@@ -6,8 +6,11 @@ import "./home.css";
 
 const Home = () => {
   const [link, setLink] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
-  const handleShortLink = () => {};
+  const handleShortLink = () => {
+    setShowModal(true);
+  };
 
   return (
     <div className="container-home">
@@ -33,7 +36,7 @@ const Home = () => {
       </div>
       <Menu />
 
-      <LinkItem />
+      {showModal && <LinkItem closeModal={() => setShowModal(false)} />}
     </div>
   );
 };

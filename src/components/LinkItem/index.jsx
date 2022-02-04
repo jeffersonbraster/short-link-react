@@ -2,12 +2,12 @@ import React from "react";
 import { FiX, FiClipboard } from "react-icons/fi";
 import "./linkitem.css";
 
-const LinkItem = () => {
+const LinkItem = ({ closeModal }) => {
   return (
     <div className="modal_container">
       <div className="modal_header">
         <h2>Link encurtado</h2>
-        <button>
+        <button onClick={closeModal}>
           <FiX size={28} color="#000" />
         </button>
       </div>
